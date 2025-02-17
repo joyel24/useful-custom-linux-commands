@@ -2,7 +2,7 @@
 Usefull commands to add to your PATH or copy to /usr/bin
 Dont forget to `chmod +x` to make them executable !
 
-ipinfo : Show all interfaces ip configuration and ip routes including gateways.
+ipinfo: Show all interfaces ip configuration and ip routes including gateways.
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -29,3 +29,4 @@ default via 192.168.1.1 dev wlp0s29f7u1u2 proto dhcp src 192.168.1.64 metric 600
 172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
 192.168.1.0/24 dev wlp0s29f7u1u2 proto kernel scope link src 192.168.1.64 metric 600
 ```
+findfilename: Case insentive file or directory name search
