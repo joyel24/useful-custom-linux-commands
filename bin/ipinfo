@@ -1,0 +1,1 @@
+ip -a address ; echo ; ip route show
