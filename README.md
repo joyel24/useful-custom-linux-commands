@@ -2,12 +2,24 @@
 Usefull commands to add to your PATH or copy to /usr/bin
 Dont forget to `chmod +x` to make them executable !
 
-findfilename: Case insentive file or directory name search (specify directory is optionnal, it will search recursively to your curent location pwd)
-
+findfilename: Case insentive file or directory recursive name search (specify directory is optionnal, it will search recursively to your curent location pwd)
 ```
-~ ❯ sudo findfilename dnsmasq.conf /etc                                                                                                                      17:46:39
+~ ❯ findfilename dnsmasq.conf /etc                                                                                                                      17:46:39
 /etc/dnsmasq.conf
 ```
+
+findpattern: Search for a matching pattern in every files recursively (to improve, some characters are not working yet like -)
+```
+~ ❯ findpattern governor /etc                                                                                                      19:32:36
+/etc/default/cpupower:1:# Define CPUs governor
+/etc/default/cpupower:2:# valid governors: ondemand, performance, powersave, conservative, userspace.
+/etc/default/cpupower:3:#governor='ondemand'
+/etc/default/cpupower:11:# Requires userspace governor to be available.
+/etc/default/cpupower:12:# Do not set governor field if you use this one.
+/etc/systemd/system.conf:36:#RuntimeWatchdogPreGovernor=
+/etc/cpufreq-bench.conf:11:governor = ondemand
+```
+
 
 ipinfo: Show all interfaces ip configuration and ip routes including gateways.
 ```
