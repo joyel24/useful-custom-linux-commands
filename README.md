@@ -1,6 +1,6 @@
 # useful-custom-linux-commands
 Usefull commands to add to your PATH or copy to /usr/bin
-Dont forget to `chmod +x` to make them executable !
+Dont forget to `chmod +x` to make them executable!
 
 findfilename: Case insentive file or directory recursive name search (specify directory is optionnal, it will search recursively to your curent location pwd)
 ```
@@ -8,7 +8,7 @@ findfilename: Case insentive file or directory recursive name search (specify di
 /etc/dnsmasq.conf
 ```
 
-findpattern: Search for a matching pattern in every files recursively (to improve, some characters are not working yet like -)
+findpattern: Search for a matching pattern in every files recursively (to improve, some characters are not working yet like `-`)
 ```
 ~ ❯ findpattern governor /etc                                                                                                      19:32:36
 /etc/default/cpupower:1:# Define CPUs governor
