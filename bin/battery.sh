@@ -1,3 +1,4 @@
+#TO RUN IT: 'while true ; do; ~/battery.sh ; sleep 0,5 ; done'
 echo
 
 if [ -f /sys/class/power_supply/BAT0/current_now ] 
